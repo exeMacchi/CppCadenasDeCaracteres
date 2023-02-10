@@ -1,4 +1,4 @@
-// 6. Convertir dos cadenas de minúsculas a mayúsculas. Luego, compararlas y decir si ambas son iguales.
+// 6. Convertir dos cadenas de minÃºsculas a mayÃºsculas. Luego, compararlas y decir si ambas son iguales.
 
 #include <iostream>
 #include <locale.h>
@@ -76,11 +76,11 @@ void mostrarResultados(char palabra1[], char palabra2[])
     cout << palabra1 << "\n";
     cout << palabra2 << "\n";
     cout << "\n";
-
-    if (charLongitud(palabra1) == charLongitud(palabra2))
+    
+    int longitud = charLongitud(palabra1);
+    
+    if (longitud == charLongitud(palabra2))
     {
-        int longitud = charLongitud(palabra1);
-
         for (int i = 0; i < longitud; i++) 
         {
             if (palabra1[i] != palabra2[i]) 
